@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="" method="post">
+        <h1>User Signup Form</h1>
+        <div class="name">
+            <h3>Enter your name:</h3>
+            <input type="text" placeholder="enter your name" id="inputForUsername">
+            <ul>
+               <li id="UsernameFor_Empty">Write your name</li>
+               <li id="UsernameFor_UpperCase">UpperCase are not allowed</li>
+               <li id="UsernameFor_FreeSpaces">Free spaces are not allowed</li>
+            </ul>
+        </div>
+        <div class="email">
+            <h3>Enter your email:</h3>
+            <input type="text" placeholder="enter your email" id="inputForEmail">
+            <ul>
+               <li id="EmailFor_Empty">Write your email</li>
+               <li id="EmailFor_Validations">Your Email is Invalid</li>
+            </ul>
+        </div>
+        <div class="password">
+            <h3>Enter your password:</h3>
+            <input type="password" placeholder="enter your password" id="inputForPassword">
+            <ul>
+               <li id="paragraphFor_Empty">Write your password</li>
+               <li id="paragraphFor_Spaces">Free spaces are not allowed</li>
+               <li id="paragraphFor_Length">Password must be between 8 and 16 characters</li>
+               <li id="paragraphFor_UpperCase">Password must contain at least one uppercase letter</li>
+               <li id="paragraphFor_LowerCase">Password must contain at least one lowercase letter</li>
+               <li id="paragraphFor_Digit">Password must contain at least one digit</li>
+               <li id="paragraphFor_SpecialCharaters">Password must contain at least one special charater</li>
+            </ul>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
