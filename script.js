@@ -119,20 +119,16 @@ let validatePassword = () => {
 };
 
 
-let submit = document.getElementById("submit");
-submit.addEventListener('click', (e) => {
-    e.preventDefault();
-    validateUserName();
-    validateEmail();
-    validatePassword();
-});
+validateUserName();
+validateEmail();
+validatePassword();
 
-let inputForUsername = document.getElementById('inputForUsername').addEventListener('input', () => {
+document.getElementById('inputForUsername').addEventListener('keypress', () => {
     validateUserName();
 });
-let inputForEmail = document.getElementById('inputForEmail').addEventListener('input', () => {
+document.getElementById('inputForEmail').addEventListener('keypress', () => {
     validateEmail();
 });
-let inputForPassword = document.getElementById('inputForPassword').addEventListener('input', () => {
+document.getElementById('inputForPassword').addEventListener('keypress', () => {
     validatePassword();
 });
